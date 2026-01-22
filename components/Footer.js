@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <Image
-              src="/pr.png"
+              src="/HE logo.png"
               alt="PR Consultants Logo"
               width={120}
               height={120}
