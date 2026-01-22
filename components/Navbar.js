@@ -18,7 +18,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" className="flex items-center select-none">
         <Image
-          src="/pr.png"
+          src="/HE logo.png"
           alt="PR Consultants Logo"
           width={90}
           height={90}
