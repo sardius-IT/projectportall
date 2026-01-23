@@ -13,11 +13,11 @@ export default function AdWordsPage() {
         {/* Left Content */}
         <div>
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">
-            PR Consultation & Campaign Strategy
+           Horizon Educational Consultancy & Campaign Strategy
           </h1>
 
           <p className="text-gray-200 leading-relaxed mb-6">
-            Our <strong>PR Consultation Program</strong> helps businesses,
+            Our <strong>Horizon Educational Consultancy Program</strong> helps businesses,
             brands, and professionals strengthen their public image and
             communication strategy. Whether you’re an established organization
             or a growing startup, we help you build trust, boost visibility, and

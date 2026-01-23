@@ -25,7 +25,7 @@ export default function Navbar() {
           className="object-contain -mr-1"
         />
         <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-orange-300 to-blue-400 bg-clip-text text-transparent leading-none">
-          Consultants
+          Horizon Educational Consultancy
         </span>
         <span className="text-blue-400">✨</span>
       </Link>
