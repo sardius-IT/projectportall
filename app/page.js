@@ -71,7 +71,6 @@ Country: ${country}`;
   return (
     <main className="text-white relative overflow-hidden">
       <AuroraBackground />
-
       {/* HERO SECTION */}
       <section className="pt-28 pb-20 text-center">
         <motion.h1
@@ -155,7 +154,115 @@ Country: ${country}`;
           </div>
         </motion.div>
       </section>
+      (
+      <section className="w-full  py-16">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Heading */}
+          <h2 className="text-4xl font-bold text-center mb-14">
+            Why Choose{" "}
+            <span className="text-blue-600 italic">
+              Horizon Educational Consultancy?
+            </span>
+          </h2>
 
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            {/* Card 1 */}
+            <div className="  rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition bg-white/10" >
+              <div className="text-5xl mb-4">🤝</div>
+              <h3 className="text-lg font-semibold">
+                15+ University <br /> Partners
+              </h3>
+            </div>
+
+            {/* Card 2 */}
+            <div className=" bg-white/10 rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+              <div className="text-5xl mb-4">🏆</div>
+              <h3 className="text-lg font-semibold">
+                15,000+ Success <br /> Stories
+              </h3>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white/10 rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+              <div className="text-5xl mb-4">🎓</div>
+              <h3 className="text-lg font-semibold">
+                Scholarship up to <br /> 30%*
+              </h3>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white/10 rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+              <div className="text-5xl mb-4">📜</div>
+              <h3 className="text-lg font-semibold">
+                Courses starting <br /> at ₹5 Lakhs*
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+          <section className="w-full  py-20">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading */}
+        <h2 className="text-4xl font-bold mb-14">
+          Horizon Educational <span className="text-blue-600 italic">Advantage</span>
+        </h2>
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          {/* Card 1 */}
+          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+            <div className="text-5xl mb-6">🎓</div>
+            <p className="text-lg font-medium">
+              Finding the Program That’s <br /> Right for You
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+            <div className="text-5xl mb-6">🎧</div>
+            <p className="text-lg font-medium">
+              Curated Expert-led <br /> Application Assistance
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+            <div className="text-5xl mb-6">📝</div>
+            <p className="text-lg font-medium">
+              English Assessment Test <br /> Prep On-the-go
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+            <div className="text-5xl mb-6">✈️📄</div>
+            <p className="text-lg font-medium">
+              Interview Preparation & <br /> Visa Guidance
+            </p>
+          </div>
+
+          {/* Card 5 */}
+          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+            <div className="text-5xl mb-6">💰</div>
+            <p className="text-lg font-medium">
+              Solving for Money…!
+            </p>
+          </div>
+
+          {/* Card 6 */}
+          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+            <div className="text-5xl mb-6">🏠</div>
+            <p className="text-lg font-medium">
+              Making Sure You Stay <br /> Right, And Stay Well
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
       {/* STUDENT VISA */}
       <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         <motion.img
@@ -183,7 +290,6 @@ Country: ${country}`;
           </ul>
         </motion.div>
       </section>
-
       {/* WORK VISA */}
       <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         <motion.div
@@ -211,7 +317,6 @@ Country: ${country}`;
           className="rounded-2xl border border-white/10"
         />
       </section>
-
       {/* TOURIST VISA */}
       <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         <motion.img
@@ -239,7 +344,6 @@ Country: ${country}`;
           </ul>
         </motion.div>
       </section>
-
       {/* IELTS */}
       <section className="max-w-6xl mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <motion.img
@@ -249,16 +353,19 @@ Country: ${country}`;
           className="rounded-2xl border border-white/20 shadow-xl"
         />
 
-        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }}>
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+        >
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-orange-300 text-transparent bg-clip-text">
             What is IELTS?
           </h2>
           <p className="text-gray-300 mt-3">
-            IELTS evaluates your English skills in Listening, Reading, Writing, and Speaking.
+            IELTS evaluates your English skills in Listening, Reading, Writing,
+            and Speaking.
           </p>
         </motion.div>
       </section>
-
       {/* GERMANY */}
       <section className="max-w-6xl mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <motion.img
@@ -268,16 +375,19 @@ Country: ${country}`;
           className="rounded-2xl border border-white/20 shadow-xl"
         />
 
-        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }}>
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+        >
           <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-300 to-orange-300 text-transparent bg-clip-text">
             What is the German Language Exam?
           </h2>
           <p className="text-gray-300 mt-3">
-            The German Language Exam evaluates your ability to speak, read, write, and understand German.
+            The German Language Exam evaluates your ability to speak, read,
+            write, and understand German.
           </p>
         </motion.div>
       </section>
-
       {/* SERVICES */}
       <section className="py-20 text-center">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-orange-300 to-blue-400 text-transparent bg-clip-text">
@@ -306,7 +416,6 @@ Country: ${country}`;
           ))}
         </div>
       </section>
-
       {/* GOALS */}
       <section className="py-20 max-w-4xl mx-auto text-center px-6">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-green-400 to-blue-300 text-transparent bg-clip-text">
@@ -322,7 +431,6 @@ Country: ${country}`;
           for students, professionals, and travellers worldwide.
         </motion.p>
       </section>
-
       {/* AWARDS */}
       <section className="py-20 text-center max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-300 to-orange-300 text-transparent bg-clip-text">

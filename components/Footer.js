@@ -16,14 +16,15 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
+          <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-orange-300 to-blue-400 bg-clip-text text-transparent leading-none">
+            Horizon Educational Consultancy
+          </span>
           <p className="text-sm mt-3 leading-relaxed text-gray-400">
             Your trusted partner for overseas education, work, and immigration
             opportunities. We guide you to achieve your dreams abroad with
             personalized support and expert visa assistance.
           </p>
-          <small className="block text-gray-500 mt-4">
-            © {new Date().getFullYear()} PR Consultants. All rights reserved.
-          </small>
+        
         </div>
 
         {/* ✅ Quick Links */}
@@ -166,9 +167,11 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 border-t border-white/10 pt-4 text-center text-sm text-gray-400">
-        © 2025 <span className="text-white font-semibold">✨PR Consultants✨</span>{" "}
-        — Your Trusted Abroad Consultancy Partner 
-
+        © {new Date().getFullYear()}
+        <span className="text-white font-semibold">
+          ✨Horizon Educational Consultancy✨
+        </span>{" "}
+        — Your Trusted Abroad Consultancy Partner
       </div>
     </footer>
   );
