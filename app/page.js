@@ -69,8 +69,34 @@ Country: ${country}`;
   };
 
   return (
-    <main className="text-white relative overflow-hidden">
-      <AuroraBackground />
+  <main className="text-white relative overflow-hidden">
+    <AuroraBackground />
+
+    {/* PREMIUM HERO SECTION */}
+    <section className="relative pt-40 pb-32 text-center px-6 z-10">
+
+      <motion.h1
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl md:text-6xl font-extrabold"
+      >
+        Andhra Pradesh & Telangana’s{" "}
+        <span className="bg-gradient-to-r from-blue-400 via-orange-300 to-blue-300 text-transparent bg-clip-text">
+          Leading Overseas Education Consultancy
+        </span>
+      </motion.h1>
+
+      <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="mt-6 max-w-3xl mx-auto text-gray-300 text-lg"
+      >
+        Horizon Educational Consultancy empowers students with expert guidance,
+        ethical support, and personalized counseling to achieve their dream of studying abroad.
+      </motion.p>
+    </section>
       {/* HERO SECTION */}
       <section className="pt-28 pb-20 text-center">
         <motion.h1
@@ -154,7 +180,7 @@ Country: ${country}`;
           </div>
         </motion.div>
       </section>
-      (
+      
       <section className="w-full  py-16">
         <div className="max-w-7xl mx-auto px-6">
           {/* Heading */}

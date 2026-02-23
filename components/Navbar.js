@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] md:w-[85%]
-      bg-gradient-to-b from-[#1a1a1a]/90 to-[#0b0b0b]/80
+      bg-white
       backdrop-blur-xl border border-white/10
       rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]
       px-6 flex items-center justify-between"
@@ -18,34 +18,36 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/" className="flex items-center select-none">
         <Image
-          src="/HE logo.png"
+          src="/HE logo (2).png"
           alt="PR Consultants Logo"
           width={90}
           height={90}
           className="object-contain -mr-1"
         />
-        <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-orange-300 to-blue-400 bg-clip-text text-transparent leading-none">
-          Horizon Educational Consultancy
+        <span className="text-[1.45rem] font-extrabold tracking-tight 
+bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
+bg-clip-text text-transparent leading-none">
+          Acenta Edu Consultancy
         </span>
         <span className="text-blue-400">✨</span>
       </Link>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex items-center space-x-8 text-gray-300 text-sm font-medium">
+      <div className="hidden md:flex items-center space-x-8 text-gray-700 text-sm font-medium">
         
-        <Link href="/student-visa" className="hover:text-white transition">
+        <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
           Student Visa
         </Link>
 
-        <Link href="/work-visa" className="hover:text-white transition">
+        <Link href="/work-visa" className="hover:text-orange-500 transition-colors duration-300">
           Work Visa
         </Link>
 
-        <Link href="/tourist-visa" className="hover:text-white transition">
+        <Link href="/tourist-visa" className="hover:text-orange-500 transition-colors duration-300">
           Tourist Visa
         </Link>
 
-        <Link href="/about" className="hover:text-white transition">
+        <Link href="/about" className="hover:text-orange-500 transition-colors duration-300">
           About Us
         </Link>
 
@@ -55,7 +57,7 @@ export default function Navbar() {
           onMouseEnter={() => setCourseOpen(true)}
           onMouseLeave={() => setCourseOpen(false)}
         >
-          <button className="hover:text-white transition">
+          <button className="hover:text-orange-500 transition-colors duration-300">
             Courses ▼
           </button>
 
@@ -90,7 +92,7 @@ export default function Navbar() {
       <div className="hidden md:flex items-center">
         <Link
           href="/contact"
-          className="bg-white text-black text-sm font-semibold px-3 py-1.5 rounded-lg hover:bg-gray-200 transition"
+          className="bg-white text-black text-sm font-semibold px-3 py-1.5 rounded-lg hover:text-orange-500 transition-colors duration-300"
         >
           Free Consultation
         </Link>

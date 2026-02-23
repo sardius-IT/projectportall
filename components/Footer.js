@@ -16,8 +16,10 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-          <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-orange-300 to-blue-400 bg-clip-text text-transparent leading-none">
-            Horizon Educational Consultancy
+          <span className="text-[1.45rem] font-extrabold tracking-tight 
+bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
+bg-clip-text text-transparent leading-none">
+            Acenta Edu Consultancy
           </span>
           <p className="text-sm mt-3 leading-relaxed text-gray-400">
             Your trusted partner for overseas education, work, and immigration
