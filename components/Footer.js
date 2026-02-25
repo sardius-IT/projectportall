@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <Image
-              src="/HE logo.png"
+              src="/HE logo (2).png"
               alt="PR Consultants Logo"
               width={120}
               height={120}
@@ -19,7 +19,7 @@ export default function Footer() {
           <span className="text-[1.45rem] font-extrabold tracking-tight 
 bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
 bg-clip-text text-transparent leading-none">
-            Acenta Edu Consultancy
+            Acenta Edu Consultants✨
           </span>
           <p className="text-sm mt-3 leading-relaxed text-gray-400">
             Your trusted partner for overseas education, work, and immigration
@@ -90,21 +90,21 @@ bg-clip-text text-transparent leading-none">
           </strong>
           <ul className="space-y-2 text-sm">
             <li>
-              📍 <span className="text-gray-400">Hyderabad, India</span>
+              📍 <span className="text-gray-400">Vijayawada,India</span>
             </li>
             <li>
               📞{" "}
               <a href="tel:+919000012345" className="hover:text-white">
-                +91 90000 12345
+                +91 7386055697
               </a>
             </li>
             <li>
               📧{" "}
               <a
-                href="mailto:info@prconsultants.in"
+                href="mailto:info@Acentaedu.com"
                 className="hover:text-white"
               >
-                info@prconsultants.in
+                info@Acentaedu.com
               </a>
             </li>
           </ul>
@@ -171,7 +171,7 @@ bg-clip-text text-transparent leading-none">
       <div className="mt-10 border-t border-white/10 pt-4 text-center text-sm text-gray-400">
         © {new Date().getFullYear()}
         <span className="text-white font-semibold">
-          ✨Horizon Educational Consultancy✨
+          ✨Acenta Edu Consultants✨
         </span>{" "}
         — Your Trusted Abroad Consultancy Partner
       </div>

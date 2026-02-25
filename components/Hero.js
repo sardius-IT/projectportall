@@ -16,8 +16,8 @@ export default function Hero(){
           <Link href="/services" className="btn-outline">Explore Services</Link>
         </div>
         <div className="grid sm:grid-cols-3 gap-3 mt-4">
-          <div className="kpi"><strong className="text-2xl block">25,000+</strong><span>Assessments</span></div>
-          <div className="kpi"><strong className="text-2xl block">1,200+</strong><span>Visa Approvals</span></div>
+          <div className="kpi"><strong className="text-2xl block">5,000+</strong><span>Assessments</span></div>
+          <div className="kpi"><strong className="text-2xl block">1,000+</strong><span>Visa Approvals</span></div>
           <div className="kpi"><strong className="text-2xl block">4.8/5</strong><span>Client Rating</span></div>
         </div>
       </div>
