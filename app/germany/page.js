@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function GermanyExamPage() {
   return (
     <main className="relative text-white bg-[#0a0a0a] min-h-screen">
-
       {/* HEADER */}
       <section className="pt-24 pb-10 text-center px-4">
         <motion.h1
@@ -25,14 +24,14 @@ export default function GermanyExamPage() {
           transition={{ delay: 0.1 }}
           className="mt-4 max-w-xl md:max-w-3xl mx-auto text-gray-300 text-sm sm:text-base leading-relaxed px-2"
         >
-          The German Language Exam (Goethe / TELC) is required for Germany Study Visa,
-          Work Visa, Job Seeker Visa, Nursing Jobs, and Permanent Residency (PR).
+          The German Language Exam (Goethe / TELC) is required for Germany Study
+          Visa, Work Visa, Job Seeker Visa, Nursing Jobs, and Permanent
+          Residency (PR).
         </motion.p>
       </section>
 
       {/* WHAT IS THE EXAM */}
       <section className="max-w-6xl mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
         <motion.img
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -41,20 +40,23 @@ export default function GermanyExamPage() {
           className="rounded-2xl border border-white/20 shadow-xl w-full h-auto object-cover"
         />
 
-        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }}>
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-300 to-orange-300 text-transparent bg-clip-text">
             What is the German Language Exam?
           </h2>
 
           <p className="text-gray-300 mt-3 leading-relaxed text-sm md:text-base">
-            The German Language Exam evaluates your ability to speak, read, write, 
-            and understand German at levels from A1 to C2.
-            <br /><br />
-            It is required for Study Visa (A1–B2), Work Visa (B1–C1), Nursing Jobs 
-            (B2), and PR (C1 recommended).
+            The German Language Exam evaluates your ability to speak, read,
+            write, and understand German at levels from A1 to C2.
+            <br />
+            <br />
+            It is required for Study Visa (A1–B2), Work Visa (B1–C1), Nursing
+            Jobs (B2), and PR (C1 recommended).
           </p>
         </motion.div>
-
       </section>
 
       {/* LEVELS SECTION */}
@@ -80,7 +82,9 @@ export default function GermanyExamPage() {
               className="p-6 bg-white/5 border border-white/10 rounded-2xl text-center"
             >
               <h3 className="text-2xl font-bold">{l.level}</h3>
-              <p className="text-gray-300 mt-2 text-sm md:text-base">{l.desc}</p>
+              <p className="text-gray-300 mt-2 text-sm md:text-base">
+                {l.desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -106,39 +110,51 @@ export default function GermanyExamPage() {
         </h2>
 
         <p className="mt-4 text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-          We provide German language coaching for A1 to B2 levels, exam registration support,
-          and documentation assistance.
+          We provide German language coaching for A1 to B2 levels, exam
+          registration support, and documentation assistance.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12 max-w-7xl mx-auto">
-
           {/* SERVICE 1 */}
-          <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
-            className="p-6 bg-white/5 border border-white/10 rounded-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-6 bg-white/5 border border-white/10 rounded-2xl"
+          >
             <h3 className="text-xl md:text-2xl font-bold">German Coaching</h3>
             <p className="text-gray-300 mt-2 text-sm md:text-base leading-relaxed">
-              ✔ A1 to B2 Classes <br /> ✔ Daily Practice <br /> ✔ Speaking Sessions <br /> ✔ Mock Tests
+              ✔ A1 to B2 Classes <br /> ✔ Daily Practice <br /> ✔ Speaking
+              Sessions <br /> ✔ Mock Tests
             </p>
           </motion.div>
 
           {/* SERVICE 2 */}
-          <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
-            className="p-6 bg-white/5 border border-white/10 rounded-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-6 bg-white/5 border border-white/10 rounded-2xl"
+          >
             <h3 className="text-xl md:text-2xl font-bold">Exam Registration</h3>
             <p className="text-gray-300 mt-2 text-sm md:text-base leading-relaxed">
-              ✔ Goethe Exam Booking <br /> ✔ TELC Registration <br /> ✔ Available Dates Info
+              ✔ Goethe Exam Booking <br /> ✔ TELC Registration <br /> ✔
+              Available Dates Info
             </p>
           </motion.div>
 
           {/* SERVICE 3 */}
-          <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
-            className="p-6 bg-white/5 border border-white/10 rounded-2xl">
-            <h3 className="text-xl md:text-2xl font-bold">Required Documentation</h3>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="p-6 bg-white/5 border border-white/10 rounded-2xl"
+          >
+            <h3 className="text-xl md:text-2xl font-bold">
+              Required Documentation
+            </h3>
             <p className="text-gray-300 mt-2 text-sm md:text-base leading-relaxed">
-              ✔ Passport Help <br /> ✔ Exam Guidelines <br /> ✔ Certificate Support <br /> ✔ Visa Submission Help
+              ✔ Passport Help <br /> ✔ Exam Guidelines <br /> ✔ Certificate
+              Support <br /> ✔ Visa Submission Help
             </p>
           </motion.div>
-
         </div>
       </section>
 
@@ -180,12 +196,13 @@ export default function GermanyExamPage() {
               className="p-6 bg-white/5 border border-white/10 rounded-2xl"
             >
               <h3 className="text-2xl md:text-3xl font-bold">{l.score}</h3>
-              <p className="text-gray-300 mt-2 text-sm md:text-base">{l.meaning}</p>
+              <p className="text-gray-300 mt-2 text-sm md:text-base">
+                {l.meaning}
+              </p>
             </motion.div>
           ))}
         </div>
       </section>
-
     </main>
   );
 }

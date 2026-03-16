@@ -25,7 +25,7 @@ export default function ContactClient() {
     const whatsappNumber = "919876543210";
 
     const message = `
-📩 *New Enquiry from FlyHigh PR Website*
+📩 *New Enquiry from Acenta Edu Consultants*
 
 👤 Name: ${formData.name}
 📧 Email: ${formData.email}
@@ -34,7 +34,7 @@ export default function ContactClient() {
     `;
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      message
+      message,
     )}`;
     window.open(whatsappLink, "_blank");
   };
@@ -49,7 +49,7 @@ export default function ContactClient() {
         className="text-center mb-12"
       >
         <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-600 bg-clip-text text-transparent">
-          Contact FlyHigh PR
+          Contact Acenta Edu Consultants
         </h1>
         <p className="text-gray-300 max-w-2xl mx-auto text-lg">
           Have questions or need a consultation? We’re here to help you craft
@@ -157,8 +157,7 @@ export default function ContactClient() {
             </h3>
 
             <p className="text-gray-300 mb-2">
-              📍 <strong>Address:</strong> FlyHigh PR Consultancy, Road No. 12,
-              Banjara Hills, Hyderabad, Telangana - 500034
+              📍 <strong>Address:</strong> Acenta Edu Consultants, 54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank Colony, Vijayawada - 520008
             </p>
 
             <p className="text-gray-300 mb-2">
@@ -174,10 +173,10 @@ export default function ContactClient() {
             <p className="text-gray-300 mb-4">
               📧 <strong>Email:</strong>{" "}
               <a
-                href="mailto:info@flyhighpr.com"
+                href="mailto:info@acentaedu.com"
                 className="text-blue-400 hover:underline"
               >
-                info@flyhighpr.com
+                info@acentaedu.com
               </a>
             </p>
 
@@ -191,7 +190,7 @@ export default function ContactClient() {
           </div>
 
           {/* Google Map */}
-          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+          {/* <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.442237973149!2d78.4282073!3d17.4240343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b8b02bba81%3A0xdda17d2a12e53b63!2sBanjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1731476954000!5m2!1sen!2sin"
               width="100%"
@@ -200,7 +199,7 @@ export default function ContactClient() {
               allowFullScreen=""
               loading="lazy"
             ></iframe>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

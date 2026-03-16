@@ -16,17 +16,16 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-          <span className="text-[1.45rem] font-extrabold tracking-tight 
+          <span
+            className="text-[1.45rem] font-extrabold tracking-tight 
 bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
-bg-clip-text text-transparent leading-none">
+bg-clip-text text-transparent leading-none"
+          >
             Acenta Edu Consultants✨
           </span>
           <p className="text-sm mt-3 leading-relaxed text-gray-400">
-            Your trusted partner for overseas education, work, and immigration
-            opportunities. We guide you to achieve your dreams abroad with
-            personalized support and expert visa assistance.
+            Your trusted partner for your student's education. We guide you to achieve your dreams with a personalized support.
           </p>
-        
         </div>
 
         {/* ✅ Quick Links */}
@@ -76,7 +75,7 @@ bg-clip-text text-transparent leading-none">
           </strong>
           <ul className="space-y-2 text-sm">
             <li>Study Abroad Counseling</li>
-            <li>Visa & Immigration Support</li>
+            {/* <li>Visa & Immigration Support</li> */}
             <li>University Admission Guidance</li>
             <li>Career & Profile Evaluation</li>
             <li>Documentation Assistance</li>
@@ -100,10 +99,7 @@ bg-clip-text text-transparent leading-none">
             </li>
             <li>
               📧{" "}
-              <a
-                href="mailto:info@Acentaedu.com"
-                className="hover:text-white"
-              >
+              <a href="mailto:info@Acentaedu.com" className="hover:text-white">
                 info@Acentaedu.com
               </a>
             </li>

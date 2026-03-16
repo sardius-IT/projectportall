@@ -507,7 +507,7 @@ export default function CountryPage() {
           </div>
         </div>
       </div>
-         <FreeCounsellingPage/>
+      <FreeCounsellingPage />
     </section>
   );
 }

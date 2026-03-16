@@ -48,7 +48,7 @@ Please reach out to this student for counselling assistance.
 
     // Encode message and open WhatsApp chat
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      message
+      message,
     )}`;
 
     window.open(whatsappLink, "_blank");
@@ -265,7 +265,7 @@ Please reach out to this student for counselling assistance.
               type="submit"
               className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition"
             >
-               FREE Counselling
+              FREE Counselling
             </button>
           </form>
         </motion.div>

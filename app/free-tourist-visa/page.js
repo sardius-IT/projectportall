@@ -39,7 +39,7 @@ export default function TouristVisaPage() {
     `;
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      message
+      message,
     )}`;
     window.open(whatsappLink, "_blank");
   };
@@ -55,11 +55,13 @@ export default function TouristVisaPage() {
           className="p-10"
         >
           <h1 className="text-3xl font-bold mb-2 text-white">
-            Apply for <span className="text-yellow-400">Tourist Visa</span> Today!
+            Apply for <span className="text-yellow-400">Tourist Visa</span>{" "}
+            Today!
           </h1>
           <p className="text-gray-300 mb-8 text-sm">
-            Fill in your details and our experts will reach out to you via WhatsApp
-            to help you with your tourist visa process, requirements, and guidance.
+            Fill in your details and our experts will reach out to you via
+            WhatsApp to help you with your tourist visa process, requirements,
+            and guidance.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

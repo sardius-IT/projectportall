@@ -2,9 +2,9 @@ import ContactClient from "./ContactClient";
 
 // ✅ SERVER COMPONENT (no "use client" here)
 export const metadata = {
-  title: "Contact Us • FlyHigh PR",
+  title: "Contact Us • Acenta Edu Consultants",
   description:
-    "Get in touch with FlyHigh PR for consultations, campaign assistance, or partnership inquiries.",
+    "Get in touch with Acenta Edu Consultants for consultations or partnership inquiries.",
 };
 
 export default function ContactPage() {

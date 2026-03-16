@@ -64,39 +64,39 @@ Country: ${country}`;
 
     window.open(
       `https://wa.me/919000012345?text=${encodeURIComponent(msg)}`,
-      "_blank"
+      "_blank",
     );
   };
 
   return (
-  <main className="text-white relative overflow-hidden">
-    <AuroraBackground />
+    <main className="text-white relative overflow-hidden">
+      <AuroraBackground />
 
-    {/* PREMIUM HERO SECTION */}
-    <section className="relative pt-40 pb-32 text-center px-6 z-10">
+      {/* PREMIUM HERO SECTION */}
+      <section className="relative pt-40 pb-32 text-center px-6 z-10">
+        <motion.h1
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-extrabold"
+        >
+          Andhra Pradesh & Telangana’s{" "}
+          <span className="bg-gradient-to-r from-blue-400 via-orange-300 to-blue-300 text-transparent bg-clip-text">
+            Leading Overseas Education Consultancy
+          </span>
+        </motion.h1>
 
-      <motion.h1
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl md:text-6xl font-extrabold"
-      >
-        Andhra Pradesh & Telangana’s{" "}
-        <span className="bg-gradient-to-r from-blue-400 via-orange-300 to-blue-300 text-transparent bg-clip-text">
-          Leading Overseas Education Consultancy
-        </span>
-      </motion.h1>
-
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-        className="mt-6 max-w-3xl mx-auto text-gray-300 text-lg"
-      >
-        Horizon Educational Consultancy empowers students with expert guidance,
-        ethical support, and personalized counseling to achieve their dream of studying abroad.
-      </motion.p>
-    </section>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-6 max-w-3xl mx-auto text-gray-300 text-lg"
+        >
+          Acenta Edu Consultants empowers students with expert
+          guidance, ethical support, and personalized counseling to achieve
+          their dream of studying abroad.
+        </motion.p>
+      </section>
       {/* HERO SECTION */}
       <section className="pt-28 pb-20 text-center">
         <motion.h1
@@ -180,7 +180,7 @@ Country: ${country}`;
           </div>
         </motion.div>
       </section>
-      
+
       <section className="w-full  py-16">
         <div className="max-w-7xl mx-auto px-6">
           {/* Heading */}
@@ -194,7 +194,7 @@ Country: ${country}`;
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Card 1 */}
-            <div className="  rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition bg-white/10" >
+            <div className="  rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition bg-white/10">
               <div className="text-5xl mb-4">🤝</div>
               <h3 className="text-lg font-semibold">
                 15+ University <br /> Partners
@@ -227,68 +227,64 @@ Country: ${country}`;
           </div>
         </div>
       </section>
-          <section className="w-full  py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <section className="w-full  py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Heading */}
+          <h2 className="text-4xl font-bold mb-14">
+            Horizon Educational{" "}
+            <span className="text-blue-600 italic">Advantage</span>
+          </h2>
 
-        {/* Heading */}
-        <h2 className="text-4xl font-bold mb-14">
-          Horizon Educational <span className="text-blue-600 italic">Advantage</span>
-        </h2>
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {/* Card 1 */}
+            <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+              <div className="text-5xl mb-6">🎓</div>
+              <p className="text-lg font-medium">
+                Finding the Program That’s <br /> Right for You
+              </p>
+            </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {/* Card 2 */}
+            <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+              <div className="text-5xl mb-6">🎧</div>
+              <p className="text-lg font-medium">
+                Curated Expert-led <br /> Application Assistance
+              </p>
+            </div>
 
-          {/* Card 1 */}
-          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
-            <div className="text-5xl mb-6">🎓</div>
-            <p className="text-lg font-medium">
-              Finding the Program That’s <br /> Right for You
-            </p>
+            {/* Card 3 */}
+            <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+              <div className="text-5xl mb-6">📝</div>
+              <p className="text-lg font-medium">
+                English Assessment Test <br /> Prep On-the-go
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+              <div className="text-5xl mb-6">✈️📄</div>
+              <p className="text-lg font-medium">
+                Interview Preparation & <br /> Visa Guidance
+              </p>
+            </div>
+
+            {/* Card 5 */}
+            <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+              <div className="text-5xl mb-6">💰</div>
+              <p className="text-lg font-medium">Solving for Money…!</p>
+            </div>
+
+            {/* Card 6 */}
+            <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
+              <div className="text-5xl mb-6">🏠</div>
+              <p className="text-lg font-medium">
+                Making Sure You Stay <br /> Right, And Stay Well
+              </p>
+            </div>
           </div>
-
-          {/* Card 2 */}
-          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
-            <div className="text-5xl mb-6">🎧</div>
-            <p className="text-lg font-medium">
-              Curated Expert-led <br /> Application Assistance
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
-            <div className="text-5xl mb-6">📝</div>
-            <p className="text-lg font-medium">
-              English Assessment Test <br /> Prep On-the-go
-            </p>
-          </div>
-
-          {/* Card 4 */}
-          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
-            <div className="text-5xl mb-6">✈️📄</div>
-            <p className="text-lg font-medium">
-              Interview Preparation & <br /> Visa Guidance
-            </p>
-          </div>
-
-          {/* Card 5 */}
-          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
-            <div className="text-5xl mb-6">💰</div>
-            <p className="text-lg font-medium">
-              Solving for Money…!
-            </p>
-          </div>
-
-          {/* Card 6 */}
-          <div className=" rounded-3xl shadow-lg p-10 text-center bg-white/10">
-            <div className="text-5xl mb-6">🏠</div>
-            <p className="text-lg font-medium">
-              Making Sure You Stay <br /> Right, And Stay Well
-            </p>
-          </div>
-
         </div>
-      </div>
-    </section>
+      </section>
       {/* STUDENT VISA */}
       <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
         <motion.img

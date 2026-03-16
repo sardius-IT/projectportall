@@ -13,16 +13,16 @@ export default function AdWordsPage() {
         {/* Left Content */}
         <div>
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">
-           Horizon Educational Consultancy & Campaign Strategy
+            Acenta Edu Consultants
           </h1>
 
           <p className="text-gray-200 leading-relaxed mb-6">
-            Our <strong>Horizon Educational Consultancy Program</strong> helps businesses,
-            brands, and professionals strengthen their public image and
-            communication strategy. Whether you’re an established organization
-            or a growing startup, we help you build trust, boost visibility, and
-            manage your reputation through data-driven campaigns, media
-            relations, and strategic storytelling.
+            Our <strong>Acenta Edu Consultants Program</strong> helps
+            businesses, brands, and professionals strengthen their public image
+            and communication strategy. Whether you’re an established
+            organization or a growing startup, we help you build trust, boost
+            visibility, and manage your reputation through data-driven
+            campaigns, media relations, and strategic storytelling.
           </p>
 
           <p className="text-gray-300 leading-relaxed mb-6 text-base sm:text-lg">
@@ -62,14 +62,14 @@ export default function AdWordsPage() {
             <h3 className="text-lg font-bold mb-2">Why Choose Us</h3>
             <ul className="list-disc pl-5 space-y-1 text-gray-300 text-sm">
               <li>Personalized strategy for every profile</li>
-              <li>Transparent process & pricing</li>
+              <li>Transparent process</li>
               <li>Dedicated case manager</li>
             </ul>
           </div>
           <div className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/20 transition text-white">
             <h3 className="text-lg font-bold mb-2">Our Presence</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Hyderabad, Chennai, Bengaluru <br />
+              Vijayawada <br />
               <span className="text-gray-400">(Virtual support Pan-India)</span>
             </p>
           </div>
@@ -80,19 +80,17 @@ export default function AdWordsPage() {
             </p>
           </div>
         </div>
-        <div className="bg-white/10 border border-white/10 rounded-2xl p-6 mt-6 hover:bg-white/20 transition text-white">
+        {/* <div className="bg-white/10 border border-white/10 rounded-2xl p-6 mt-6 hover:bg-white/20 transition text-white">
           <h3 className="text-lg font-bold mb-2">Licensing & Ethics</h3>
           <p className="text-sm text-gray-300 leading-relaxed">
-            We are not a government agency. We provide documentation support and
-            guidance. Immigration decisions are made solely by the respective
-            governments.
+            We are not a government agency. We provide education guidance support.
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Additional Info Section */}
       <div className="max-w-5xl mx-auto mt-16 sm:mt-20">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
+        {/* <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
           What We Provide
         </h2>
         <ul className="list-disc pl-6 text-gray-200 space-y-2 text-base sm:text-lg">
@@ -101,36 +99,35 @@ export default function AdWordsPage() {
           <li>Continuous optimization to reduce CPC and improve CTR.</li>
           <li>Conversion tracking and analytics integration.</li>
           <li>Monthly performance reports and ROI tracking.</li>
-        </ul>
+        </ul> */}
 
         <h2 className="text-2xl sm:text-3xl font-semibold text-white mt-10 mb-4">
           Contact Details
         </h2>
         <p className="text-gray-200 mb-2 text-sm sm:text-base">
-          📍 <strong>Address:</strong> FlyHigh PR Consultancy, Road No. 12,
-          Banjara Hills, Hyderabad, Telangana - 500034
+          📍 <strong>Address:</strong> Acenta Edu Consultants, 54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank Colony, Vijayawada - 520008
         </p>
         <p className="text-gray-200 mb-2 text-sm sm:text-base">
           📞 <strong>Phone:</strong>{" "}
           <a
-            href="tel:+919876543210"
-            className="text-[#1b1b1b] hover:underline"
+            href="tel:+917386055697"
+            className="text-white hover:underline"
           >
-            +91 98765 43210
+            +91 73860 55697
           </a>
         </p>
         <p className="text-gray-200 mb-4 text-sm sm:text-base">
           📧 <strong>Email:</strong>{" "}
           <a
-            href="mailto:info@flyhighpr.com"
-            className="text-[#1b1b1b] hover:underline"
+            href="mailto:info@acentaedu.com"
+            className="text-white hover:underline"
           >
-            info@flyhighpr.com
+            info@acentaedu.com
           </a>
         </p>
 
         {/* Google Map Embed */}
-        <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-[250px] sm:h-[300px] md:h-[350px]">
+        {/* <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-[250px] sm:h-[300px] md:h-[350px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.442237973149!2d78.4282073!3d17.4240343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b8b02bba81%3A0xdda17d2a12e53b63!2sBanjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1731476954000!5m2!1sen!2sin"
             width="100%"
@@ -139,7 +136,7 @@ export default function AdWordsPage() {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </section>
   );

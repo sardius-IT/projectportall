@@ -25,7 +25,9 @@ export default function TouristVisaPage() {
             Tourist Visa Guidance
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Travel the world with confidence — <span className="text-blue-400">FlyHigh PR</span> helps you get your tourist or visitor visa quickly and smoothly.
+            Travel the world with confidence —{" "}
+            <span className="text-blue-400">FlyHigh PR</span> helps you get your
+            tourist or visitor visa quickly and smoothly.
           </p>
         </motion.div>
       </div>
@@ -43,7 +45,8 @@ export default function TouristVisaPage() {
             Types of Tourist Visas
           </h2>
           <p className="text-gray-300 mb-6">
-            Depending on your travel purpose and duration, the following are the main types of tourist and visitor visas:
+            Depending on your travel purpose and duration, the following are the
+            main types of tourist and visitor visas:
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -104,7 +107,10 @@ export default function TouristVisaPage() {
             <li>Meet family and friends living abroad.</li>
             <li>Attend events, tourism activities, and festivals.</li>
             <li>Enjoy easy, short-term travel with simple documentation.</li>
-            <li>Some countries allow limited business activities during your visit.</li>
+            <li>
+              Some countries allow limited business activities during your
+              visit.
+            </li>
           </ul>
         </motion.div>
 
@@ -120,13 +126,22 @@ export default function TouristVisaPage() {
           </h2>
           <ol className="list-decimal list-inside space-y-3 text-gray-300">
             <li>Choose your travel destination and check visa requirements.</li>
-            <li>Prepare necessary documents such as passport, photos, and financial proof.</li>
-            <li>Submit your application online or at the visa application center.</li>
+            <li>
+              Prepare necessary documents such as passport, photos, and
+              financial proof.
+            </li>
+            <li>
+              Submit your application online or at the visa application center.
+            </li>
             <li>Schedule biometrics or an interview (if required).</li>
-            <li>Receive your visa and travel confirmation within the given timeline.</li>
+            <li>
+              Receive your visa and travel confirmation within the given
+              timeline.
+            </li>
           </ol>
           <p className="mt-4 text-gray-400 italic">
-            💡 Processing timelines depend on the destination — generally 5 to 15 working days.
+            💡 Processing timelines depend on the destination — generally 5 to
+            15 working days.
           </p>
         </motion.div>
 
@@ -171,11 +186,23 @@ export default function TouristVisaPage() {
             Rules & Requirements
           </h2>
           <ul className="list-disc list-inside space-y-3 text-gray-300">
-            <li>Your passport must be valid for at least 6 months beyond your intended stay.</li>
-            <li>Provide proof of financial stability and return travel tickets.</li>
-            <li>Medical insurance may be mandatory for certain destinations.</li>
-            <li>Overstaying or working on a tourist visa is strictly prohibited.</li>
-            <li>Follow the specific visa conditions and duration limits set by each country.</li>
+            <li>
+              Your passport must be valid for at least 6 months beyond your
+              intended stay.
+            </li>
+            <li>
+              Provide proof of financial stability and return travel tickets.
+            </li>
+            <li>
+              Medical insurance may be mandatory for certain destinations.
+            </li>
+            <li>
+              Overstaying or working on a tourist visa is strictly prohibited.
+            </li>
+            <li>
+              Follow the specific visa conditions and duration limits set by
+              each country.
+            </li>
           </ul>
         </motion.div>
 
@@ -191,19 +218,21 @@ export default function TouristVisaPage() {
           </h2>
           <div className="bg-white/10 border border-white/10 rounded-2xl p-6">
             <p className="text-gray-300 mb-2">
-              ⏳ <strong>Processing Time:</strong> 5 – 15 working days (depending on country)
+              ⏳ <strong>Processing Time:</strong> 5 – 15 working days
+              (depending on country)
             </p>
             <p className="text-gray-300 mb-2">
               💰 <strong>Visa Fees:</strong> USD 50 – 200 (country-specific)
             </p>
             <p className="text-gray-300">
               🧾 <strong>Service Charges:</strong> Contact{" "}
-              <span className="text-blue-400">FlyHigh PR</span> for transparent pricing and complete visa support.
+              <span className="text-blue-400">FlyHigh PR</span> for transparent
+              pricing and complete visa support.
             </p>
           </div>
         </motion.div>
       </div>
-      <FreeCounsellingPage/>
+      <FreeCounsellingPage />
     </section>
   );
 }

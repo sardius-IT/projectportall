@@ -54,7 +54,6 @@ export default function StudentVisaPage() {
       ></div>
 
       <div className="container mx-auto px-6 md:px-10 relative z-10">
-      
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -65,7 +64,7 @@ export default function StudentVisaPage() {
             Study Abroad with Confidence
           </h1>
           <p className="text-gray-200 text-lg leading-relaxed">
-            At <strong>FlyHigh PR Consultancy</strong>, we provide end-to-end
+            At <strong>Acenta Edu Consultants</strong>, we provide end-to-end
             guidance for your international education journey. From choosing the
             right university to visa approval, we’re with you every step of the
             way.
@@ -169,7 +168,7 @@ export default function StudentVisaPage() {
             ))}
           </div>
         </div>
-        <FreeCounsellingPage/>
+        <FreeCounsellingPage />
       </div>
     </section>
   );
