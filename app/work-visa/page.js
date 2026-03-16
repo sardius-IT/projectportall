@@ -26,7 +26,8 @@ export default function WorkVisaPage() {
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
             Unlock your global career opportunities with expert visa support and
-            end-to-end assistance from <span className="text-blue-400">FlyHigh PR</span>.
+            end-to-end assistance from{" "}
+            <span className="text-blue-400">FlyHigh PR</span>.
           </p>
         </motion.div>
       </div>
@@ -121,8 +122,13 @@ export default function WorkVisaPage() {
             Work Visa Application Process
           </h2>
           <ol className="list-decimal list-inside space-y-3 text-gray-300">
-            <li>Secure a valid job offer or sponsorship from an employer abroad.</li>
-            <li>Gather required documents (passport, qualifications, experience, offer letter, etc.).</li>
+            <li>
+              Secure a valid job offer or sponsorship from an employer abroad.
+            </li>
+            <li>
+              Gather required documents (passport, qualifications, experience,
+              offer letter, etc.).
+            </li>
             <li>Submit visa application and pay applicable processing fees.</li>
             <li>Attend biometrics and/or visa interview (if required).</li>
             <li>Receive your work visa and start planning relocation.</li>
@@ -174,11 +180,20 @@ export default function WorkVisaPage() {
           </h2>
           <ul className="list-disc list-inside space-y-3 text-gray-300">
             <li>Must hold a valid passport with at least 6 months validity.</li>
-            <li>Proof of job offer or sponsorship from an approved employer.</li>
-            <li>Educational and professional qualifications required by the job role.</li>
-            <li>Clean background check and medical examination (in most cases).</li>
+            <li>
+              Proof of job offer or sponsorship from an approved employer.
+            </li>
+            <li>
+              Educational and professional qualifications required by the job
+              role.
+            </li>
+            <li>
+              Clean background check and medical examination (in most cases).
+            </li>
             <li>Demonstration of sufficient funds or employer support.</li>
-            <li>Compliance with work rights, duration limits, and visa conditions.</li>
+            <li>
+              Compliance with work rights, duration limits, and visa conditions.
+            </li>
           </ul>
         </motion.div>
 
@@ -194,7 +209,8 @@ export default function WorkVisaPage() {
           </h2>
           <div className="bg-white/10 border border-white/10 rounded-2xl p-6">
             <p className="text-gray-300 mb-2">
-              ⏳ <strong>Processing Time:</strong> 4 – 12 weeks (depends on country & visa type)
+              ⏳ <strong>Processing Time:</strong> 4 – 12 weeks (depends on
+              country & visa type)
             </p>
             <p className="text-gray-300 mb-2">
               💰 <strong>Visa Fees:</strong> USD 150 – 600 (varies by country)
@@ -207,7 +223,7 @@ export default function WorkVisaPage() {
           </div>
         </motion.div>
       </div>
-      <FreeCounsellingPage/>
+      <FreeCounsellingPage />
     </section>
   );
 }

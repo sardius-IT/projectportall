@@ -47,7 +47,7 @@ Please reach out to assist this client with work visa support.
 `;
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      message
+      message,
     )}`;
     window.open(whatsappLink, "_blank");
   };
