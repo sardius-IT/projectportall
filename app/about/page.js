@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "AdWords Services • FlyHigh PR",
+  title: "Acenta Edu Consultants",
   description:
-    "Professional AdWords consultation and campaign management services by FlyHigh PR.",
+    "Your Trusted Education Partner.",
 };
 
 export default function AdWordsPage() {

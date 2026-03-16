@@ -181,7 +181,7 @@ export default function ContactClient() {
             </p>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917386055697"
               target="_blank"
               className="inline-block mt-5 bg-gradient-to-r from-green-400 to-green-600 text-black px-5 py-2.5 rounded-full font-semibold hover:opacity-90 transition"
             >

@@ -39,7 +39,7 @@ bg-clip-text text-transparent leading-none"
                 About Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/student-visa"
                 className="hover:text-white transition"
@@ -59,7 +59,7 @@ bg-clip-text text-transparent leading-none"
               >
                 Tourist Visa
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact" className="hover:text-white transition">
                 Contact Us
@@ -78,7 +78,7 @@ bg-clip-text text-transparent leading-none"
             {/* <li>Visa & Immigration Support</li> */}
             <li>University Admission Guidance</li>
             <li>Career & Profile Evaluation</li>
-            <li>Documentation Assistance</li>
+            {/* <li>Documentation Assistance</li> */}
           </ul>
         </div>
 
@@ -99,8 +99,8 @@ bg-clip-text text-transparent leading-none"
             </li>
             <li>
               📧{" "}
-              <a href="mailto:info@Acentaedu.com" className="hover:text-white">
-                info@Acentaedu.com
+              <a href="mailto:info@acentaedu.com" className="hover:text-white">
+                info@acentaedu.com
               </a>
             </li>
           </ul>
@@ -109,7 +109,7 @@ bg-clip-text text-transparent leading-none"
           <div className="flex items-center space-x-4 mt-4">
             <div className="flex items-center ">
               {/* Facebook */}
-              <a
+              {/* <a
                 href="#"
                 className="w-12 h-12   flex items-center justify-center hover:bg-white/20 transition"
               >
@@ -119,10 +119,10 @@ bg-clip-text text-transparent leading-none"
                   width={25}
                   height={25}
                 />
-              </a>
+              </a> */}
 
               {/* Instagram */}
-              <a
+              {/* <a
                 href="#"
                 className="w-12 h-12  flex items-center justify-center hover:bg-white/20 transition"
               >
@@ -132,11 +132,11 @@ bg-clip-text text-transparent leading-none"
                   width={25}
                   height={25}
                 />
-              </a>
+              </a> */}
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/917386055697"
                 className="w-12 h-12 flex items-center justify-center hover:bg-white/20 transition"
               >
                 <Image
@@ -149,7 +149,7 @@ bg-clip-text text-transparent leading-none"
 
               {/* Email */}
               <a
-                href="mailto:yourmail@gmail.com"
+                href="mailto:info@acentaedu.com"
                 className="w-12 h-12  flex items-center justify-center hover:bg-white/20 transition"
               >
                 <Image
