@@ -1,5 +1,5 @@
-# ImmigraPath — Next.js + Tailwind
-A clean, modern immigration consultancy website scaffold (App Router) inspired by Croyez, VJC Overseas, and Visas Avenue (original content).
+# Acenta Edu Consultants — Next.js + Tailwind
+A clean, modern education consultancy website scaffold (App Router).
 
 ## Quick Start
 ```bash

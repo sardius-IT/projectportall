@@ -16,7 +16,7 @@ export default function Navbar() {
       px-6 flex items-center justify-between"
     >
       {/* Logo */}
-      <Link href="/" className="flex items-center select-none">
+      <Link href="/home" className="flex items-center select-none">
         <Image
           src="/HE logo (2).png"
           alt="PR Consultants Logo"
@@ -35,17 +35,13 @@ bg-clip-text text-transparent leading-none">
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-8 text-gray-700 text-sm font-medium">
         
-        <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
+        {/* <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
           Student Visa
         </Link>
 
         <Link href="/work-visa" className="hover:text-orange-500 transition-colors duration-300">
           Work Visa
-        </Link>
-
-        <Link href="/tourist-visa" className="hover:text-orange-500 transition-colors duration-300">
-          Tourist Visa
-        </Link>
+        </Link> */}
 
         <Link href="/about" className="hover:text-orange-500 transition-colors duration-300">
           About Us
@@ -111,17 +107,13 @@ bg-clip-text text-transparent leading-none">
         <div className="absolute top-16 left-0 w-full bg-black/90 border-t border-white/10 backdrop-blur-xl md:hidden">
           <div className="flex flex-col items-start p-4 space-y-3 text-gray-300">
 
-            <Link href="/student-visa" onClick={() => setMenuOpen(false)}>
+            {/* <Link href="/student-visa" onClick={() => setMenuOpen(false)}>
               Student Visa
             </Link>
 
             <Link href="/work-visa" onClick={() => setMenuOpen(false)}>
               Work Visa
-            </Link>
-
-            <Link href="/tourist-visa" onClick={() => setMenuOpen(false)}>
-              Tourist Visa
-            </Link>
+            </Link> */}
 
             <Link href="/about" onClick={() => setMenuOpen(false)}>
               About Us

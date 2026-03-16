@@ -40,7 +40,7 @@ bg-clip-text text-transparent leading-none">
                 About Us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/student-visa"
                 className="hover:text-white transition"
@@ -52,15 +52,7 @@ bg-clip-text text-transparent leading-none">
               <Link href="/work-visa" className="hover:text-white transition">
                 Work Visa
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/tourist-visa"
-                className="hover:text-white transition"
-              >
-                Tourist Visa
-              </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact" className="hover:text-white transition">
                 Contact Us

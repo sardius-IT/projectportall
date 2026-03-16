@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Test } from '../home/Test';
+import Test from '../home/Test';
 
 /* -------------------------------------------------------
    AURORA BACKGROUND

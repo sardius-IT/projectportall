@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "ImmigraPath — Immigration Consultants",
+  title: "Acenta Edu Consultants",
   description:
-    "Ethical guidance for PR, Study, and Work visas. Hyderabad • Chennai • Pan-India.",
+    "Your trusted partner for overseas education.",
 };
 
 export default function RootLayout({ children }) {
