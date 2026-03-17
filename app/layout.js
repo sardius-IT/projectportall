@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Acenta Edu Consultants - Your Trusted Education Partner",
+  title: "Acenta Edu Consultants",
   description:
-    "One Stop Education guidance for Study Abroad.",
+    "Your Trusted Education Partner.",
 };
 
 export default function RootLayout({ children }) {
