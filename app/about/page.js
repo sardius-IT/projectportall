@@ -1,143 +1,198 @@
-import Image from "next/image";
+"use client";
 
-export const metadata = {
-  title: "Acenta Edu Consultants",
-  description:
-    "Your Trusted Education Partner.",
-};
+import { motion } from "framer-motion";
+import { Target, Heart, Users, Award, CheckCircle } from "lucide-react";
 
-export default function AdWordsPage() {
+const values = [
+  {
+    icon: Target,
+    title: "Student-First Approach",
+    description: "Every decision we make puts your aspirations and wellbeing at the center.",
+  },
+  {
+    icon: Heart,
+    title: "Integrity & Transparency",
+    description: "Honest assessments, clear communication, and no hidden fees — ever.",
+  },
+  {
+    icon: Users,
+    title: "Personalized Guidance",
+    description: "No cookie-cutter advice. Each strategy is tailored to your unique profile.",
+  },
+  {
+    icon: Award,
+    title: "Excellence in Results",
+    description: "A 95% admission rate speaks to our commitment to delivering outcomes.",
+  },
+];
+
+// const team = [
+//   {
+//     name: "Dr. Ananya Patel",
+//     role: "Founder & Chief Consultant",
+//     bio: "Former admissions officer at Columbia University with 15+ years of experience in global education consulting.",
+//     initials: "AP",
+//   },
+//   {
+//     name: "Michael Torres",
+//     role: "Head of Strategy",
+//     bio: "MBA from Wharton. Specializes in building compelling application narratives for top business schools.",
+//     initials: "MT",
+//   },
+//   {
+//     name: "Dr. Emily Wong",
+//     role: "Academic Advisor",
+//     bio: "PhD from Oxford. Expert in STEM admissions and research-focused program applications.",
+//     initials: "EW",
+//   },
+//   {
+//     name: "Rahul Krishnan",
+//     role: "Test Prep Director",
+//     bio: "Scored 99th percentile on GRE, GMAT, and SAT. Has coached over 500 students to their target scores.",
+//     initials: "RK",
+//   },
+// ];
+
+export default function About() {
   return (
-    <section className=" text-white min-h-screen py-16 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-        {/* Left Content */}
-        <div>
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">
-            Acenta Edu Consultants
-          </h1>
+    <div className="pt-20 bg-white">
+      {/* Hero */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl"
+          >
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">About Us</span>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-3 tracking-tight">
+              Guiding Futures, <br />
+              <span className="text-accent">One Admission at a Time</span>
+            </h1>
+            <p className="text-foreground mt-6 text-lg leading-relaxed max-w-2xl">
+              Founded in 2025, Acenta Edu Consultants has grown from a small consultancy into a trusted name in education admissions. Our team of former admissions officers, academic experts, and career counselors work together to craft winning applications.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-          <p className="text-gray-200 leading-relaxed mb-6">
-            Our <strong>Acenta Edu Consultants Program</strong> helps
-            businesses, brands, and professionals strengthen their public image
-            and communication strategy. Whether you’re an established
-            organization or a growing startup, we help you build trust, boost
-            visibility, and manage your reputation through data-driven
-            campaigns, media relations, and strategic storytelling.
-          </p>
-
-          <p className="text-gray-300 leading-relaxed mb-6 text-base sm:text-lg">
-            We focus on real growth — from keyword research and campaign setup
-            to conversion optimization and analytics. With the right mix of
-            strategy, automation, and creative design, your brand reaches the
-            right audience at the right time.
-          </p>
-
-          {/* CTA Button */}
-          <div className="mt-4">
-            <a
-              href="https://wa.me/919876543210"
-              target="_blank"
-              className="inline-block bg-[#1b1b1b] text-white px-6 py-3 rounded-full font-medium tracking-wide hover:bg-[#333] transition text-sm sm:text-base"
+      {/* Mission */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
             >
-              Book a Free Consultation
-            </a>
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+                alt="Team collaboration"
+                className="rounded-2xl shadow-xl object-cover w-full h-[400px]"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
+            >
+              <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Mission</span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+                Democratizing Access to World-Class Education
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                We believe every talented student deserves a shot at their dream university, regardless of background. Our mission is to provide expert, accessible, and affordable admission guidance that levels the playing field.
+              </p>
+              <div className="space-y-3">
+                {["7+ years of proven results", "500+ successful placements", "Partnerships with universities", "Dedicated support from start to finish"].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+                    <span className="text-sm text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
+      </section>
 
-        {/* Right Image */}
-        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[420px] rounded-2xl overflow-hidden shadow-lg">
-          <Image
-            src="/about.jpg"
-            alt="AdWords Consultation Office"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            priority
-          />
-        </div>
-      </div>
-      <div className="max-w-6xl mx-auto mt-10">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
-          <div className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/20 transition text-white">
-            <h3 className="text-lg font-bold mb-2">Why Choose Us</h3>
-            <ul className="list-disc pl-5 space-y-1 text-gray-300 text-sm">
-              <li>Personalized strategy for every profile</li>
-              <li>Transparent process</li>
-              <li>Dedicated case manager</li>
-            </ul>
-          </div>
-          <div className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/20 transition text-white">
-            <h3 className="text-lg font-bold mb-2">Our Presence</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Vijayawada <br />
-              <span className="text-gray-400">(Virtual support Pan-India)</span>
-            </p>
-          </div>
-          <div className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/20 transition text-white">
-            <h3 className="text-lg font-bold mb-2">Our Promise</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              No false guarantees. Honest assessment and clear timelines.
-            </p>
-          </div>
-        </div>
-        {/* <div className="bg-white/10 border border-white/10 rounded-2xl p-6 mt-6 hover:bg-white/20 transition text-white">
-          <h3 className="text-lg font-bold mb-2">Licensing & Ethics</h3>
-          <p className="text-sm text-gray-300 leading-relaxed">
-            We are not a government agency. We provide education guidance support.
-          </p>
-        </div> */}
-      </div>
-
-      {/* Additional Info Section */}
-      <div className="max-w-5xl mx-auto mt-16 sm:mt-20">
-        {/* <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
-          What We Provide
-        </h2>
-        <ul className="list-disc pl-6 text-gray-200 space-y-2 text-base sm:text-lg">
-          <li>Comprehensive keyword and competitor analysis.</li>
-          <li>AdWords campaign setup (Search, Display, Video & Shopping).</li>
-          <li>Continuous optimization to reduce CPC and improve CTR.</li>
-          <li>Conversion tracking and analytics integration.</li>
-          <li>Monthly performance reports and ROI tracking.</li>
-        </ul> */}
-
-        <h2 className="text-2xl sm:text-3xl font-semibold text-white mt-10 mb-4">
-          Contact Details
-        </h2>
-        <p className="text-gray-200 mb-2 text-sm sm:text-base">
-          📍 <strong>Address:</strong> Acenta Edu Consultants, 54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank Colony, Vijayawada - 520008
-        </p>
-        <p className="text-gray-200 mb-2 text-sm sm:text-base">
-          📞 <strong>Phone:</strong>{" "}
-          <a
-            href="tel:+917386055697"
-            className="text-white hover:underline"
+      {/* Values */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
           >
-            +91 73860 55697
-          </a>
-        </p>
-        <p className="text-gray-200 mb-4 text-sm sm:text-base">
-          📧 <strong>Email:</strong>{" "}
-          <a
-            href="mailto:info@acentaedu.com"
-            className="text-white hover:underline"
-          >
-            info@acentaedu.com
-          </a>
-        </p>
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Values</span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 tracking-tight">
+              What Drives Us
+            </h2>
+          </motion.div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((value, i) => (
+              <motion.div
+                key={value.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center p-8 bg-card rounded-2xl border border-border"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-5">
+                  <value.icon className="w-7 h-7 text-accent" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">{value.title}</h3>
+                <p className="text-sm text-foreground leading-relaxed">{value.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-        {/* Google Map Embed */}
-        {/* <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-[250px] sm:h-[300px] md:h-[350px]">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.442237973149!2d78.4282073!3d17.4240343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b8b02bba81%3A0xdda17d2a12e53b63!2sBanjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1731476954000!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </div> */}
-      </div>
-    </section>
+      {/* Team */}
+      {/* <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Team</span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 tracking-tight">
+              Meet the Experts
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-xl mx-auto text-lg">
+              Seasoned professionals who've walked the path and know the way.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {team.map((member, i) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center"
+              >
+                <div className="w-24 h-24 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-5 text-2xl font-bold text-primary-foreground">
+                  {member.initials}
+                </div>
+                <h3 className="font-semibold text-foreground">{member.name}</h3>
+                <p className="text-accent text-sm font-medium mt-1">{member.role}</p>
+                <p className="text-muted-foreground text-sm mt-3 leading-relaxed">{member.bio}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+    </div>
   );
 }

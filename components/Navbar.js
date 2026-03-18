@@ -8,18 +8,13 @@ export default function Navbar() {
   const [courseOpen, setCourseOpen] = useState(false);
 
   return (
-    <nav
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] md:w-[85%]
-      bg-white
-      backdrop-blur-xl border border-white/10
-      rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]
-      px-6 flex items-center justify-between"
-    >
+    <nav className="fixed inset-x-0 top-0 z-50 bg-background">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
       {/* Logo */}
       <Link href="/" className="flex items-center select-none">
         <Image
           src="/HE logo (2).png"
-          alt="PR Consultants Logo"
+          alt="Acenta Edu Consultants Logo"
           width={90}
           height={90}
           className="object-contain -mr-1"
@@ -59,42 +54,49 @@ bg-clip-text text-transparent leading-none"
           href="/about"
           className="hover:text-orange-500 transition-colors duration-300"
         >
-          About Us
+          About
+        </Link>
+
+        <Link
+          href="/services"
+          className="hover:text-orange-500 transition-colors duration-300"
+        >
+          Services
         </Link>
 
         {/* ⭐ Programs Dropdown */}
-        <div
+        {/* <div
           className="relative"
           onMouseEnter={() => setCourseOpen(true)}
           onMouseLeave={() => setCourseOpen(false)}
-        >
-          <button className="hover:text-orange-500 transition-colors duration-300">
+        > */}
+          {/* <button className="hover:text-orange-500 transition-colors duration-300">
             Services ▼
-          </button>
+          </button> */}
 
           {/* Dropdown Box */}
-          {courseOpen && (
-            <div className="absolute top-6 left-0 bg-black/90 border border-white/10 backdrop-blur-xl rounded-xl p-3 w-40 space-y-2 shadow-lg z-50">
-              {/* <Link
+          {/* {courseOpen && (
+            <div className="absolute top-6 left-0 bg-background/80 border border-white/10 backdrop-blur-xl rounded-xl p-3 w-40 space-y-2 shadow-lg z-50">
+              <Link
                 href="/Ielts"
                 className="block text-gray-300 hover:text-white"
               >
                 IELTS
-              </Link> */}
+              </Link> 
 
-              {/* <Link
+              <Link
                 href="/germany"
                 className="block text-gray-300 hover:text-white"
               >
                 Germany
-              </Link> */}
+              </Link> 
 
-              {/* <Link
+              <Link
                 href="/fullstack-java"
                 className="block text-gray-300 hover:text-white"
               >
                 Full stack-java
-              </Link> */}
+              </Link>
 
               <Link
                 href="/Ielts"
@@ -103,14 +105,14 @@ bg-clip-text text-transparent leading-none"
                 Admission Programs
               </Link>
             </div>
-          )}
-        </div>
+          )} */}
+        {/* </div> */}
 
         <Link
           href="/contact"
           className="hover:text-orange-500 transition-colors duration-300"
         >
-          Contact Us
+          Contact
         </Link>
       </div>
 
@@ -131,6 +133,8 @@ bg-clip-text text-transparent leading-none"
       >
         ☰
       </button>
+      </div>
+      {/* </div> */}
 
       {/* Mobile Menu */}
       {menuOpen && (

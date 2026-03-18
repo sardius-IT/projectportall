@@ -7,16 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#0b5ed7",
-          dark: "#0847a5",
-        },
-      },
-      boxShadow: {
-        soft: "0 10px 20px rgba(0,0,0,.06)",
-      },
-      borderRadius: {
-        xl2: "1rem",
+        background: "#ffffff",   // page background
+        foreground: "#0B1230",   // main text
+        muted: "#4B5563",        // secondary text
+        primary: "#0F1C3A",      // button/navbar primary
+        accent: "#F3B63A",       // accent / highlights
+        accent2: "#E6C96A",      // secondary accent
       },
     },
   },

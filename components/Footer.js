@@ -3,66 +3,53 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0b0b0b] text-gray-300 pt-12 pb-6 mt-16 border-t border-white/10">
+    <footer className="bg-primary text-muted pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* ✅ Logo & About */}
-        <div>
-          <div className="flex items-center gap-2">
+       <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          {/* <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center"> */}
             <Image
               src="/HE logo (2).png"
-              alt="PR Consultants Logo"
+              alt="Acenta Edu Consultants Logo"
               width={120}
               height={120}
               className="object-contain"
             />
           </div>
-          <span
-            className="text-[1.45rem] font-extrabold tracking-tight 
-bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
-bg-clip-text text-transparent leading-none"
-          >
+         <h2 className="text-xl font-bold tracking-tight bg-gradient-to-r from-orange-400 via-slate-300 to-slate-100 bg-clip-text text-transparent">
             Acenta Edu Consultants✨
-          </span>
-          <p className="text-sm mt-3 leading-relaxed text-gray-400">
+          </h2>
+          {/* </div> */}
+          <p className="text-sm leading-relaxed text-white">
             Your trusted partner for your student's education. We guide you to achieve your dreams with a personalized support.
           </p>
         </div>
 
         {/* ✅ Quick Links */}
-        <div>
-          <strong className="block mb-3 text-white font-semibold">
+        <div className="md:pl-6">
+          <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-4">
             Quick Links
-          </strong>
-          <ul className="space-y-2 text-sm">
+          </h3>
+          <ul className="space-y-2 text-sm text-white">
             <li>
-              <Link href="/about" className="hover:text-white transition">
-                About Us
-              </Link>
-            </li>
-            {/* <li>
-              <Link
-                href="/student-visa"
-                className="hover:text-white transition"
-              >
-                Student Visa
+              <Link href="/" className="text-white hover:text-white transition">
+                Home
               </Link>
             </li>
             <li>
-              <Link href="/work-visa" className="hover:text-white transition">
-                Work Visa
+              <Link href="/about" className="text-white hover:text-white transition">
+                About
               </Link>
             </li>
             <li>
-              <Link
-                href="/tourist-visa"
-                className="hover:text-white transition"
-              >
-                Tourist Visa
+              <Link href="/services" className="text-white hover:text-white transition">
+                Services
               </Link>
-            </li> */}
+            </li>
             <li>
-              <Link href="/contact" className="hover:text-white transition">
-                Contact Us
+              <Link href="/contact" className="text-white hover:text-white transition">
+                Contact
               </Link>
             </li>
           </ul>
@@ -70,107 +57,67 @@ bg-clip-text text-transparent leading-none"
 
         {/* ✅ Services */}
         <div>
-          <strong className="block mb-3 text-white font-semibold">
-            Our Services
-          </strong>
-          <ul className="space-y-2 text-sm">
-            <li>Study Abroad Counseling</li>
-            {/* <li>Visa & Immigration Support</li> */}
+          <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-4">
+            Services
+          </h3>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li>University Selection</li>
             <li>University Admission Guidance</li>
             <li>Career & Profile Evaluation</li>
-            {/* <li>Documentation Assistance</li> */}
+            <li>Application Strategy</li>
           </ul>
         </div>
 
         {/* ✅ Contact Info */}
         <div>
-          <strong className="block mb-3 text-white font-semibold">
-            Get in Touch
-          </strong>
-          <ul className="space-y-2 text-sm">
-            <li>
-              📍 <span className="text-gray-400">Vijayawada,India</span>
-            </li>
-            <li>
-              📞{" "}
-              <a href="tel:+919000012345" className="hover:text-white">
-                +91 7386055697
-              </a>
-            </li>
-            <li>
-              📧{" "}
-              <a href="mailto:info@acentaedu.com" className="hover:text-white">
+          <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-4">
+            Contact
+          </h3>
+          <ul className="space-y-3 text-sm text-white">
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-accent">📧</span>
+              <a
+                href="mailto:info@acentaedu.com"
+                className="text-white hover:text-accent hover:underline transition"
+              >
                 info@acentaedu.com
               </a>
             </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-accent">📞{" "}</span>
+              <a href="tel:+919000012345" className="text-white hover:text-accent hover:underline transition">
+                +91 7386055697
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 text-accent">📍</span>
+              <span>Vijayawada, AP</span>
+            </li>
           </ul>
-
-          {/* Social Media Icons */}
-          <div className="flex items-center space-x-4 mt-4">
-            <div className="flex items-center ">
-              {/* Facebook */}
-              {/* <a
-                href="#"
-                className="w-12 h-12   flex items-center justify-center hover:bg-white/20 transition"
-              >
-                <Image
-                  src="/facebook_3536394.png"
-                  alt="Facebook"
-                  width={25}
-                  height={25}
-                />
-              </a> */}
-
-              {/* Instagram */}
-              {/* <a
-                href="#"
-                className="w-12 h-12  flex items-center justify-center hover:bg-white/20 transition"
-              >
-                <Image
-                  src="/instagram_408758-removebg-preview.png"
-                  alt="Instagram"
-                  width={25}
-                  height={25}
-                />
-              </a> */}
-
-              {/* WhatsApp */}
-              <a
-                href="https://wa.me/917386055697"
-                className="w-12 h-12 flex items-center justify-center hover:bg-white/20 transition"
-              >
-                <Image
-                  src="/whatsapp_2504957.png"
-                  alt="WhatsApp"
-                  width={25}
-                  height={25}
-                />
-              </a>
-
-              {/* Email */}
-              <a
-                href="mailto:info@acentaedu.com"
-                className="w-12 h-12  flex items-center justify-center hover:bg-white/20 transition"
-              >
-                <Image
-                  src="/mail_9068877-removebg-preview.png"
-                  alt="Email"
-                  width={25}
-                  height={25}
-                />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
-      <div className="mt-10 border-t border-white/10 pt-4 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()}
-        <span className="text-white font-semibold">
-          ✨Acenta Edu Consultants✨
-        </span>{" "}
-        — Your Trusted Abroad Consultancy Partner
+      <div className="mt-10 border-t border-white/10 pt-4">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+          <div className="text-left">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-white font-semibold">
+              ✨Acenta Edu Consultants✨
+            </span>{" "}
+            — All rights reserved.
+          </div>
+
+          <div className="flex gap-6 mt-3 md:mt-0">
+            <span className="text-xs text-white/40 hover:text-white/70 cursor-pointer transition-colors">
+              Privacy Policy
+            </span>
+            <span className="text-xs text-white/40 hover:text-white/70 cursor-pointer transition-colors">
+              Terms of Service
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   );
 }
+
