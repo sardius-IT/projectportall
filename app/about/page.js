@@ -55,7 +55,7 @@ const values = [
 
 export default function About() {
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-10 bg-white">
       {/* Hero */}
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -78,7 +78,7 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section className="py-24 bg-white">
+      <section className="py-15 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -121,7 +121,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

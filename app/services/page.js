@@ -82,7 +82,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-10 bg-white">
       {/* Hero */}
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -105,7 +105,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-background">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="space-y-8">
             {services.map((service, index) => (
