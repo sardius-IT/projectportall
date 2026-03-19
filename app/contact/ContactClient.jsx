@@ -43,7 +43,12 @@ export default function ContactClient() {
   const contactInfo = [
     { icon: Mail, label: "Email", value: "info@acentaedu.com" },
     { icon: Phone, label: "Phone", value: "+91 7386055697" },
-    { icon: MapPin, label: "Office", value: "54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank Colony, Vijayawada - 520008" },
+    {
+      icon: MapPin,
+      label: "Office",
+      value:
+        "54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank Colony, Vijayawada - 520008",
+    },
     { icon: Clock, label: "Hours", value: "Mon - Fri: 9AM - 6PM EST" },
   ];
 
@@ -57,105 +62,107 @@ export default function ContactClient() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-accent text-sm font-semibold uppercase tracking-widest">Contact Us</span>
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+              Contact Us
+            </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-3 tracking-tight">
               Let's Start Your
               <span className="text-accent block">Journey Together</span>
             </h1>
             <p className="text-foreground mt-6 text-lg leading-relaxed max-w-2xl">
-              Have questions or ready to get started? Reach out to us for a free consultation.
+              Have questions or ready to get started? Reach out to us for a free
+              consultation.
             </p>
           </motion.div>
         </div>
       </section>
 
-      
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16">
-        {/* Left Column - Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="lg:col-span-3"
-        >
-          <h2 className="font-display text-2xl font-bold text-foreground mb-2">
-            Send Us a Message
-          </h2>
-
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="text-sm font-medium text-foreground">
-                Your Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your full name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
-              />
-            </div>
-
-            <div>
-              <label className="text-sm font-medium text-foreground">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="john@example.com"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
-              />
-            </div>
-
-            <div>
-              <label className="text-sm font-medium text-foreground">
-                Mobile Number
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+91111111111"
-                value={formData.phone}
-                onChange={handleChange}
-                pattern="+[0-9]{13}"
-                maxLength="13"
-                required
-                className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
-              />
-            </div>
-
-            <div>
-              <label className="text-sm font-medium text-foreground">
-                Your Message
-              </label>
-              <textarea
-                name="message"
-                placeholder="Type your message..."
-                value={formData.message}
-                onChange={handleChange}
-                rows="4"
-                required
-                className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl h-14 text-base font-medium gap-2"
+            {/* Left Column - Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="lg:col-span-3"
             >
-              Send Message on WhatsApp
-            </button>
-          </form>
-        </motion.div>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-2">
+                Send Us a Message
+              </h2>
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="text-sm font-medium text-foreground">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium text-foreground">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="john@example.com"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium text-foreground">
+                    Mobile Number
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+91111111111"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    pattern="+[0-9]{13}"
+                    maxLength="13"
+                    required
+                    className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium text-foreground">
+                    Your Message
+                  </label>
+                  <textarea
+                    name="message"
+                    placeholder="Type your message..."
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows="4"
+                    required
+                    className="w-full p-3 rounded-md text-black outline-none focus:ring-2 focus:ring-blue-400"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl h-14 text-base font-medium gap-2"
+                >
+                  Send Message on WhatsApp
+                </button>
+              </form>
+            </motion.div>
 
             {/* Contact Info */}
             <motion.div
@@ -181,8 +188,12 @@ export default function ContactClient() {
                       <info.icon className="w-5 h-5 text-accent" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-foreground">{info.label}</div>
-                      <div className="text-sm text-foreground mt-0.5">{info.value}</div>
+                      <div className="text-sm font-medium text-foreground">
+                        {info.label}
+                      </div>
+                      <div className="text-sm text-foreground mt-0.5">
+                        {info.value}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -191,23 +202,28 @@ export default function ContactClient() {
               <div className="rounded-2xl overflow-hidden border border-border h-64 flex items-center justify-center">
                 <div className="text-center text-foreground">
                   <MapPin className="w-8 h-8 mx-auto mb-2 text-accent/50" />
-                  <p className="text-sm font-medium">54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank Colony</p>
+                  <p className="text-sm font-medium">
+                    54-20/2-3A/1, Road 2, Mahanadu Road, Srinivasa Nagar Bank
+                    Colony
+                  </p>
                   <p className="text-xs">Vijayawada - 520008, AP</p>
                 </div>
               </div>
 
               <div className="bg-primary rounded-2xl p-6 text-primary-foreground">
-                <h4 className="font-semibold mb-2">Free 30-Minute Consultation</h4>
+                <h4 className="font-semibold mb-2">
+                  Free 30-Minute Consultation
+                </h4>
                 <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                  Not sure where to start? Book a free consultation call with our admissions experts. No commitment, just honest advice.
+                  Not sure where to start? Book a free consultation call with
+                  our admissions experts. No commitment, just honest advice.
                 </p>
               </div>
             </motion.div>
-
+          </div>
         </div>
-        </div>
-        </section>
-      </div>
+      </section>
+    </div>
 
     // <section className="bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] text-white min-h-screen py-20 px-6">
     //   {/* Page Header */}

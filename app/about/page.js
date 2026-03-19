@@ -7,22 +7,26 @@ const values = [
   {
     icon: Target,
     title: "Student-First Approach",
-    description: "Every decision we make puts your aspirations and wellbeing at the center.",
+    description:
+      "Every decision we make puts your aspirations and wellbeing at the center.",
   },
   {
     icon: Heart,
     title: "Integrity & Transparency",
-    description: "Honest assessments, clear communication, and no hidden fees — ever.",
+    description:
+      "Honest assessments, clear communication, and no hidden fees — ever.",
   },
   {
     icon: Users,
     title: "Personalized Guidance",
-    description: "No cookie-cutter advice. Each strategy is tailored to your unique profile.",
+    description:
+      "No cookie-cutter advice. Each strategy is tailored to your unique profile.",
   },
   {
     icon: Award,
     title: "Excellence in Results",
-    description: "A 95% admission rate speaks to our commitment to delivering outcomes.",
+    description:
+      "A 95% admission rate speaks to our commitment to delivering outcomes.",
   },
 ];
 
@@ -65,13 +69,18 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-accent text-sm font-semibold uppercase tracking-widest">About Us</span>
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+              About Us
+            </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-3 tracking-tight">
               Guiding Futures, <br />
               <span className="text-accent">One Admission at a Time</span>
             </h1>
             <p className="text-foreground mt-6 text-lg leading-relaxed max-w-2xl">
-              Founded in 2025, Acenta Edu Consultants has grown from a small consultancy into a trusted name in education admissions. Our team of former admissions officers, academic experts, and career counselors work together to craft winning applications.
+              Founded in 2025, Acenta Edu Consultants has grown from a small
+              consultancy into a trusted name in education admissions. Our team
+              of former admissions officers, academic experts, and career
+              counselors work together to craft winning applications.
             </p>
           </motion.div>
         </div>
@@ -100,15 +109,25 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Mission</span>
+              <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+                Our Mission
+              </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground tracking-tight">
                 Democratizing Access to World-Class Education
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                We believe every talented student deserves a shot at their dream university, regardless of background. Our mission is to provide expert, accessible, and affordable admission guidance that levels the playing field.
+                We believe every talented student deserves a shot at their dream
+                university, regardless of background. Our mission is to provide
+                expert, accessible, and affordable admission guidance that
+                levels the playing field.
               </p>
               <div className="space-y-3">
-                {["7+ years of proven results", "500+ successful placements", "Partnerships with universities", "Dedicated support from start to finish"].map((item) => (
+                {[
+                  "7+ years of proven results",
+                  "500+ successful placements",
+                  "Partnerships with universities",
+                  "Dedicated support from start to finish",
+                ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
                     <span className="text-sm text-foreground">{item}</span>
@@ -129,7 +148,9 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Values</span>
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+              Our Values
+            </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 tracking-tight">
               What Drives Us
             </h2>
@@ -147,8 +168,12 @@ export default function About() {
                 <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-5">
                   <value.icon className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">{value.title}</h3>
-                <p className="text-sm text-foreground leading-relaxed">{value.description}</p>
+                <h3 className="font-semibold text-foreground mb-2">
+                  {value.title}
+                </h3>
+                <p className="text-sm text-foreground leading-relaxed">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </div>

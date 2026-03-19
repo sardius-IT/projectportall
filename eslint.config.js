@@ -7,11 +7,11 @@ import pluginUnusedImports from "eslint-plugin-unused-imports";
 export default [
   {
     files: [
-      "src/components/**/*.{js,mjs,cjs,jsx}",
-      "src/pages/**/*.{js,mjs,cjs,jsx}",
-      "src/Layout.jsx",
+      "app/components/**/*.{js,mjs,cjs,jsx}",
+      "app/pages/**/*.{js,mjs,cjs,jsx}",
+      "app/Layout.jsx",
     ],
-    ignores: ["src/lib/**/*", "src/components/ui/**/*"],
+    ignores: ["app/lib/**/*", "app/components/ui/**/*"],
     ...pluginJs.configs.recommended,
     ...pluginReact.configs.flat.recommended,
     languageOptions: {
@@ -57,4 +57,7 @@ export default [
       "react-hooks/rules-of-hooks": "error",
     },
   },
+  {
+    "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"]
+  }
 ];

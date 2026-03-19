@@ -2,39 +2,78 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FileText, Compass, Users, Award, CheckCircle, Globe, BookOpen, MessageSquare, GraduationCap } from "lucide-react";
-
+import {
+  FileText,
+  Compass,
+  Users,
+  Award,
+  CheckCircle,
+  Globe,
+  BookOpen,
+  MessageSquare,
+  GraduationCap,
+} from "lucide-react";
 
 const services = [
   {
     icon: Compass,
     title: "University Selection & Profiling",
-    description: "We analyze your academic profile, extracurriculars, career goals, and preferences to create a curated list of best-fit universities across the globe.",
-    features: ["Personalized university shortlist", "Program compatibility analysis", "Admit probability assessment", "Budget & location matching"],
+    description:
+      "We analyze your academic profile, extracurriculars, career goals, and preferences to create a curated list of best-fit universities across the globe.",
+    features: [
+      "Personalized university shortlist",
+      "Program compatibility analysis",
+      "Admit probability assessment",
+      "Budget & location matching",
+    ],
   },
   {
     icon: FileText,
     title: "Application Strategy & Management",
-    description: "From timeline planning to final submission, we manage every detail of your applications to ensure nothing falls through the cracks.",
-    features: ["Application timeline planning", "Document checklist management", "Deadline tracking", "Multi-application coordination"],
+    description:
+      "From timeline planning to final submission, we manage every detail of your applications to ensure nothing falls through the cracks.",
+    features: [
+      "Application timeline planning",
+      "Document checklist management",
+      "Deadline tracking",
+      "Multi-application coordination",
+    ],
   },
   {
     icon: MessageSquare,
     title: "Essay & SOP Review",
-    description: "Our team of expert editors and former admissions officers help you craft compelling narratives that highlight your unique story.",
-    features: ["Brainstorming sessions", "Multiple draft reviews", "Tone & voice optimization", "Plagiarism checks"],
+    description:
+      "Our team of expert editors and former admissions officers help you craft compelling narratives that highlight your unique story.",
+    features: [
+      "Brainstorming sessions",
+      "Multiple draft reviews",
+      "Tone & voice optimization",
+      "Plagiarism checks",
+    ],
   },
   {
     icon: GraduationCap,
     title: "Standardized Test Preparation",
-    description: "Strategic guidance on test selection, preparation plans, and score improvement for SAT, GRE, GMAT, IELTS, TOEFL, and more.",
-    features: ["Diagnostic assessment", "Custom study plans", "Practice test analysis", "Score improvement strategies"],
+    description:
+      "Strategic guidance on test selection, preparation plans, and score improvement for SAT, GRE, GMAT, IELTS, TOEFL, and more.",
+    features: [
+      "Diagnostic assessment",
+      "Custom study plans",
+      "Practice test analysis",
+      "Score improvement strategies",
+    ],
   },
   {
     icon: Award,
     title: "Scholarship & Financial Aid",
-    description: "We identify scholarship opportunities and guide you through the application process to reduce your financial burden.",
-    features: ["Scholarship database access", "Application assistance", "Financial aid planning", "Negotiation support"],
+    description:
+      "We identify scholarship opportunities and guide you through the application process to reduce your financial burden.",
+    features: [
+      "Scholarship database access",
+      "Application assistance",
+      "Financial aid planning",
+      "Negotiation support",
+    ],
   },
   // {
   //   icon: Globe,
@@ -45,8 +84,14 @@ const services = [
   {
     icon: Users,
     title: "Interview Preparation",
-    description: "Mock interviews with tailored feedback to help you present your best self to admissions committees and scholarship panels.",
-    features: ["Mock interview sessions", "Body language coaching", "Common question prep", "Personalized feedback"],
+    description:
+      "Mock interviews with tailored feedback to help you present your best self to admissions committees and scholarship panels.",
+    features: [
+      "Mock interview sessions",
+      "Body language coaching",
+      "Common question prep",
+      "Personalized feedback",
+    ],
   },
   // {
   //   icon: BookOpen,
@@ -92,13 +137,16 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Services</span>
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+              Our Services
+            </span>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-3 tracking-tight">
               Everything You Need to
               <span className="text-accent block">Get Admitted</span>
             </h1>
             <p className="text-foreground mt-6 text-lg leading-relaxed max-w-2xl">
-              Comprehensive admission consulting services designed to maximize your chances at top universities worldwide.
+              Comprehensive admission consulting services designed to maximize
+              your chances at top universities worldwide.
             </p>
           </motion.div>
         </div>
@@ -121,13 +169,19 @@ export default function Services() {
                   <service.icon className="w-7 h-7 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl text-foreground mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-4">{service.description}</p>
+                  <h3 className="font-semibold text-xl text-foreground mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    {service.description}
+                  </p>
                   <div className="grid sm:grid-cols-2 gap-2">
                     {service.features.map((feature) => (
                       <div key={feature} className="flex items-center gap-2">
                         <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                        <span className="text-sm text-foreground/80">{feature}</span>
+                        <span className="text-sm text-foreground/80">
+                          {feature}
+                        </span>
                       </div>
                     ))}
                   </div>

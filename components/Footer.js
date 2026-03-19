@@ -6,9 +6,8 @@ export default function Footer() {
     <footer className="bg-primary text-muted pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* ✅ Logo & About */}
-       <div className="space-y-4">
-        <div className="flex items-center gap-3">
-          {/* <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center"> */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
             <Image
               src="/HE logo (2).png"
               alt="Acenta Edu Consultants Logo"
@@ -17,12 +16,13 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-         <h2 className="text-xl font-bold tracking-tight bg-gradient-to-r from-orange-400 via-slate-300 to-slate-100 bg-clip-text text-transparent">
+          <h2 className="text-xl font-bold tracking-tight bg-gradient-to-r from-orange-400 via-slate-300 to-slate-100 bg-clip-text text-transparent">
             Acenta Edu Consultants✨
           </h2>
           {/* </div> */}
           <p className="text-sm leading-relaxed text-white">
-            Your trusted partner for your student's education. We guide you to achieve your dreams with a personalized support.
+            Your trusted partner for your student's education. We guide you to
+            achieve your dreams with a personalized support.
           </p>
         </div>
 
@@ -38,17 +38,26 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="text-white hover:text-white transition">
+              <Link
+                href="/about"
+                className="text-white hover:text-white transition"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/services" className="text-white hover:text-white transition">
+              <Link
+                href="/services"
+                className="text-white hover:text-white transition"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="text-white hover:text-white transition">
+              <Link
+                href="/contact"
+                className="text-white hover:text-white transition"
+              >
                 Contact
               </Link>
             </li>
@@ -84,8 +93,11 @@ export default function Footer() {
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <span className="mt-1 text-accent">📞{" "}</span>
-              <a href="tel:+919000012345" className="text-white hover:text-accent hover:underline transition">
+              <span className="mt-1 text-accent">📞 </span>
+              <a
+                href="tel:+919000012345"
+                className="text-white hover:text-accent hover:underline transition"
+              >
                 +91 7386055697
               </a>
             </li>
@@ -120,4 +132,3 @@ export default function Footer() {
     </footer>
   );
 }
-

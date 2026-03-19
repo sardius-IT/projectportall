@@ -10,28 +10,24 @@ export default function Navbar() {
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-background">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
-      {/* Logo */}
-      <Link href="/" className="flex items-center select-none">
-        <Image
-          src="/HE logo (2).png"
-          alt="Acenta Edu Consultants Logo"
-          width={90}
-          height={90}
-          className="object-contain -mr-1"
-        />
-        <span
-          className="text-[1.45rem] font-extrabold tracking-tight 
-bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
-bg-clip-text text-transparent leading-none"
-        >
-          Acenta Edu Consultancy
-        </span>
-        <span className="text-blue-400">✨</span>
-      </Link>
+        {/* Logo */}
+        <Link href="/" className="flex items-center select-none">
+          <Image
+            src="/HE logo (2).png"
+            alt="Acenta Edu Consultants Logo"
+            width={90}
+            height={90}
+            className="object-contain -mr-1"
+          />
+          <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 bg-clip-text text-transparent leading-none">
+            Acenta Edu Consultancy
+          </span>
+          <span className="text-blue-400">✨</span>
+        </Link>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex items-center space-x-8 text-gray-700 text-sm font-medium mr-2">
-        {/* <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center space-x-8 text-gray-700 text-sm font-medium mr-2">
+          {/* <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
           Student Visa
         </Link>
 
@@ -43,29 +39,29 @@ bg-clip-text text-transparent leading-none"
           Tourist Visa
         </Link> */}
 
-        <Link
-          href="/"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          Home
-        </Link>
+          <Link
+            href="/"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            Home
+          </Link>
 
-        <Link
-          href="/about"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          About
-        </Link>
+          <Link
+            href="/about"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            About
+          </Link>
 
-        <Link
-          href="/services"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          Services
-        </Link>
+          <Link
+            href="/services"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            Services
+          </Link>
 
-        {/* ⭐ Programs Dropdown */}
-        {/* <div
+          {/* ⭐ Programs Dropdown */}
+          {/* <div
           className="relative"
           onMouseEnter={() => setCourseOpen(true)}
           onMouseLeave={() => setCourseOpen(false)}
@@ -106,18 +102,18 @@ bg-clip-text text-transparent leading-none"
               </Link>
             </div>
           )} */}
-        {/* </div> */}
+          {/* </div> */}
 
-        <Link
-          href="/contact"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          Contact
-        </Link>
-      </div>
+          <Link
+            href="/contact"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            Contact
+          </Link>
+        </div>
 
-      {/* Desktop Button */}
-      {/* <div className="hidden md:flex items-center">
+        {/* Desktop Button */}
+        {/* <div className="hidden md:flex items-center">
         <Link
           href="/contact"
           className="bg-white text-black text-sm font-semibold px-3 py-1.5 rounded-lg hover:text-orange-500 transition-colors duration-300"
@@ -126,13 +122,13 @@ bg-clip-text text-transparent leading-none"
         </Link>
       </div> */}
 
-      {/* Mobile Menu Button */}
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden text-white text-2xl"
-      >
-        ☰
-      </button>
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-white text-2xl"
+        >
+          ☰
+        </button>
       </div>
       {/* </div> */}
 
