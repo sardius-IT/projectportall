@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { Menu } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,11 +10,11 @@ export default function Navbar() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-background">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between pl-0 pr-4 py-10">
         {/* Logo */}
         <Link href="/" className="flex items-center select-none">
           <Image
-            src="/HE logo (2).png"
+            src="/AcentaEduLogo.png"
             alt="Acenta Edu Consultants Logo"
             width={90}
             height={90}
@@ -125,16 +126,16 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white text-2xl"
+          className="md:hidden text-white bg-black p-2 rounded"
         >
-          ☰
+          <Menu size={13} />
         </button>
       </div>
       {/* </div> */}
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black/90 border-t border-white/10 backdrop-blur-xl md:hidden">
+        <div className="absolute top-25 left-0 w-full border-t border-white/10 backdrop-blur-xl md:hidden">
           <div className="flex flex-col items-start p-4 space-y-3 text-gray-300">
             {/* <Link href="/student-visa" onClick={() => setMenuOpen(false)}>
               Student Visa
@@ -153,11 +154,15 @@ export default function Navbar() {
             </Link>
 
             <Link href="/about" onClick={() => setMenuOpen(false)}>
-              About Us
+              About
+            </Link>
+
+            <Link href="/services" onClick={() => setMenuOpen(false)}>
+              Services
             </Link>
 
             {/* ⭐ Courses in Mobile */}
-            <div className="w-full">
+            {/* <div className="w-full">
               <p className="text-white font-semibold">Programs</p>
               <div className="ml-3 mt-2 space-y-2">
                 <Link href="/Ielts" onClick={() => setMenuOpen(false)}>
@@ -167,10 +172,10 @@ export default function Navbar() {
                   Germany
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             <Link href="/contact" onClick={() => setMenuOpen(false)}>
-              Contact Us
+              Contact
             </Link>
           </div>
         </div>
