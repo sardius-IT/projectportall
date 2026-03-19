@@ -8,35 +8,26 @@ export default function Navbar() {
   const [courseOpen, setCourseOpen] = useState(false);
 
   return (
-    <nav
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] md:w-[85%]
-      bg-white
-      backdrop-blur-xl border border-white/10
-      rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.4)]
-      px-6 flex items-center justify-between"
-    >
-      {/* Logo */}
-      <Link href="/" className="flex items-center select-none">
-        <Image
-          src="/HE logo (2).png"
-          alt="PR Consultants Logo"
-          width={90}
-          height={90}
-          className="object-contain -mr-1"
-        />
-        <span
-          className="text-[1.45rem] font-extrabold tracking-tight 
-bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 
-bg-clip-text text-transparent leading-none"
-        >
-          Acenta Edu Consultancy
-        </span>
-        <span className="text-blue-400">✨</span>
-      </Link>
+    <nav className="fixed inset-x-0 top-0 z-50 bg-background">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <Link href="/" className="flex items-center select-none">
+          <Image
+            src="/HE logo (2).png"
+            alt="Acenta Edu Consultants Logo"
+            width={90}
+            height={90}
+            className="object-contain -mr-1"
+          />
+          <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 bg-clip-text text-transparent leading-none">
+            Acenta Edu Consultancy
+          </span>
+          <span className="text-blue-400">✨</span>
+        </Link>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex items-center space-x-8 text-gray-700 text-sm font-medium mr-2">
-        {/* <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center space-x-8 text-gray-700 text-sm font-medium mr-2">
+          {/* <Link href="/student-visa" className="hover:text-orange-500 transition-colors duration-300">
           Student Visa
         </Link>
 
@@ -48,53 +39,60 @@ bg-clip-text text-transparent leading-none"
           Tourist Visa
         </Link> */}
 
-        <Link
-          href="/"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          Home
-        </Link>
+          <Link
+            href="/"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            Home
+          </Link>
 
-        <Link
-          href="/about"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          About Us
-        </Link>
+          <Link
+            href="/about"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            About
+          </Link>
 
-        {/* ⭐ Programs Dropdown */}
-        <div
+          <Link
+            href="/services"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            Services
+          </Link>
+
+          {/* ⭐ Programs Dropdown */}
+          {/* <div
           className="relative"
           onMouseEnter={() => setCourseOpen(true)}
           onMouseLeave={() => setCourseOpen(false)}
-        >
-          <button className="hover:text-orange-500 transition-colors duration-300">
+        > */}
+          {/* <button className="hover:text-orange-500 transition-colors duration-300">
             Services ▼
-          </button>
+          </button> */}
 
           {/* Dropdown Box */}
-          {courseOpen && (
-            <div className="absolute top-6 left-0 bg-black/90 border border-white/10 backdrop-blur-xl rounded-xl p-3 w-40 space-y-2 shadow-lg z-50">
-              {/* <Link
+          {/* {courseOpen && (
+            <div className="absolute top-6 left-0 bg-background/80 border border-white/10 backdrop-blur-xl rounded-xl p-3 w-40 space-y-2 shadow-lg z-50">
+              <Link
                 href="/Ielts"
                 className="block text-gray-300 hover:text-white"
               >
                 IELTS
-              </Link> */}
+              </Link> 
 
-              {/* <Link
+              <Link
                 href="/germany"
                 className="block text-gray-300 hover:text-white"
               >
                 Germany
-              </Link> */}
+              </Link> 
 
-              {/* <Link
+              <Link
                 href="/fullstack-java"
                 className="block text-gray-300 hover:text-white"
               >
                 Full stack-java
-              </Link> */}
+              </Link>
 
               <Link
                 href="/Ielts"
@@ -103,19 +101,19 @@ bg-clip-text text-transparent leading-none"
                 Admission Programs
               </Link>
             </div>
-          )}
+          )} */}
+          {/* </div> */}
+
+          <Link
+            href="/contact"
+            className="hover:text-orange-500 transition-colors duration-300"
+          >
+            Contact
+          </Link>
         </div>
 
-        <Link
-          href="/contact"
-          className="hover:text-orange-500 transition-colors duration-300"
-        >
-          Contact Us
-        </Link>
-      </div>
-
-      {/* Desktop Button */}
-      {/* <div className="hidden md:flex items-center">
+        {/* Desktop Button */}
+        {/* <div className="hidden md:flex items-center">
         <Link
           href="/contact"
           className="bg-white text-black text-sm font-semibold px-3 py-1.5 rounded-lg hover:text-orange-500 transition-colors duration-300"
@@ -124,13 +122,15 @@ bg-clip-text text-transparent leading-none"
         </Link>
       </div> */}
 
-      {/* Mobile Menu Button */}
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden text-white text-2xl"
-      >
-        ☰
-      </button>
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-white text-2xl"
+        >
+          ☰
+        </button>
+      </div>
+      {/* </div> */}
 
       {/* Mobile Menu */}
       {menuOpen && (

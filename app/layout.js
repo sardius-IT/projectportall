@@ -4,8 +4,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Acenta Edu Consultants",
-  description:
-    "Your Trusted Education Partner.",
+  description: "Your Trusted Education Partner.",
 };
 
 export default function RootLayout({ children }) {
