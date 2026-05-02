@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <Image
-              src="/HE logo (2).png"
+              src="/AcentaEduLogo.png"
               alt="Acenta Edu Consultants Logo"
               width={120}
               height={120}

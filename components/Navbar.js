@@ -21,7 +21,7 @@ export default function Navbar() {
             className="object-contain -mr-1"
           />
           <span className="text-[1.45rem] font-extrabold tracking-tight bg-gradient-to-r from-orange-400 via-gray-500 to-orange-400 bg-clip-text text-transparent leading-none">
-            Acenta Edu Consultancy
+            Acenta Edu
           </span>
           <span className="text-blue-400">✨</span>
         </Link>
