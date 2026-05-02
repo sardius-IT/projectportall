@@ -1,0 +1,13 @@
+User-agent: *
+# Exceptions: Block backend and private directories
+Disallow: /_api/           # Wix internal API calls
+Disallow: /_partials/      # Website structural components
+Disallow: /_v/             # Internal versioning files
+Disallow: /admin/          # Prevent login pages from appearing in search
+Disallow: /account/        # Prevent user dashboards from appearing in search
+
+# Maintain accessibility for the rest of the site
+Allow: /
+
+# Direct bots to your sitemap
+Sitemap: https://acentaedu.com/sitemap.xml
