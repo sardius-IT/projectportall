@@ -1,13 +1,14 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { GoogleAnalytics } from '@next/third-parties/google'; 
 
 export const metadata = {
   title: "Acenta Edu Consultants | Expert University Admission Consultant Vijayawada",
   description: "Expert guidance for university admissions, career counseling and scholarships. Let Acenta Edu be your guide to a brighter future for the 2026-27 intake.",
 
   // 1. Keywords (Google ignores this tag, but other small engines use it)
-  keywords: ["University Admissions", "Study Abroad", "Scholarships", "Vijayawada", "Acenta Edu", "Undergrad Admissions", "Grad Admissions", "Career Counseling"],
+  keywords: ["University Admissions", "Study Abroad", "Scholarships", "Vijayawada", "Acenta Edu", "Undergrad Admissions", "Grad Admissions", "Career Counseling", "Overseas Education", "Education Consultant", "Application Assistance", "College Selection", "Admissions Strategy", "Telangana Education Consulting Services", "Andhra Pradesh Education Consulting Services", "Vishakhapatnam Education Consulting Services", "India Education Consulting Services", "MBBS", "Hotel Management Admissions", "Engineering Admissions", "Business School Admissions", "Medical School Admissions", "International Student Admissions", "University Application Guidance", "Education Consulting in Vijayawada", "Education Consulting in Telangana", "Education Consulting in Andhra Pradesh", "Education Consulting in Vishakhapatnam", "Education Consulting in India"],
   
   // 2. Author
   authors: [{ name: "Acenta Edu Team" }],
@@ -65,6 +66,8 @@ export default function RootLayout({ children }) {
 
         {/* Footer */}
         <Footer />
+
+        <GoogleAnalytics gaId="G-K9BN6D1NS8" />
       </body>
     </html>
   );

@@ -95,7 +95,7 @@ export default function Footer() {
             <li className="flex items-start gap-2">
               <span className="mt-1 text-accent">📞 </span>
               <a
-                href="tel:+919000012345"
+                href="tel:+917386055697"
                 className="text-white hover:text-accent hover:underline transition"
               >
                 +91 7386055697
