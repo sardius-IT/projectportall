@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <Image
               src="/AcentaEduLogo.png"
-              alt="Acenta Edu Consultants Logo"
+              alt="Expert student counseling for global university admissions"
               width={120}
               height={120}
               className="object-contain"

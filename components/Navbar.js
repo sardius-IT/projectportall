@@ -15,7 +15,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center select-none">
           <Image
             src="/AcentaEduLogo.png"
-            alt="Acenta Edu Consultants Logo"
+            alt="Expert student counseling for top global university admissions"
             width={90}
             height={90}
             className="object-contain -mr-1"
