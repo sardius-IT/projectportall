@@ -98,7 +98,7 @@ export default function About() {
             >
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
-                alt="Team collaboration"
+                alt="Your kids' first step and guide to a brighter future with Acenta EduTeam collaboration"
                 className="rounded-2xl shadow-xl object-cover w-full h-[400px]"
               />
             </motion.div>

@@ -3,8 +3,54 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Acenta Edu Consultants",
-  description: "Your Trusted Education Partner.",
+  title: "Acenta Edu Consultants | Expert University Admission Consultant Vijayawada",
+  description: "Expert guidance for university admissions, career counseling and scholarships. Let Acenta Edu be your guide to a brighter future for the 2026-27 intake.",
+
+  // 1. Keywords (Google ignores this tag, but other small engines use it)
+  keywords: ["University Admissions", "Study Abroad", "Scholarships", "Vijayawada", "Acenta Edu", "Undergrad Admissions", "Grad Admissions", "Career Counseling"],
+  
+  // 2. Author
+  authors: [{ name: "Acenta Edu Team" }],
+  
+  // 3. Robots (This tells bots how to treat the page)
+  robots: {
+    index: true,     // Allow search engines to show this page
+    follow: true,    // Allow search engines to follow links on this page
+    nocache: true,   // Don't show a "cached" link in search results
+  },
+
+  metadataBase: new URL('https://acentaedu.com'),
+  alternates: {
+    canonical: '/',
+  },
+
+  // This is where your Google Site Verification goes!
+  verification: {
+    google: "xaMMemfis-hlSGvkEPmRBaSjmEb6CjFnjPuojZ9DDIs",
+  },
+
+  // Social Media (Facebook/OpenGraph and Twitter)
+  openGraph: {
+    title: "Acenta Edu | University Admissions",
+    description: "Your trusted partner and exper guidance for university admissions.",
+    url: "https://acentaedu.com",
+    siteName: "Acenta Edu",
+    images: [
+      {
+        url: "https://acentaedu.com/AcentaEduLogo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Acenta Edu | University Admissions",
+    description: "Your trusted partner and exper guidance for university admissions.",
+    images: ["https://acentaedu.com/AcentaEduLogo.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
